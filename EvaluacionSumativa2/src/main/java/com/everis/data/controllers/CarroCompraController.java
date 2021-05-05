@@ -32,14 +32,14 @@ public class CarroCompraController {
 
 		List<CarroCompra> lista_carro = ccService.allCarroCompra();
 		model.addAttribute("carrocompras", lista_carro);
-
+		/*
 		int sum = 0;
 		for (int i = 0; i < lista_carro.size(); i++) {
 			sum = sum + Integer.parseInt(lista_carro.get(i).getProducto().getPrecio())
 					* Integer.parseInt(lista_carro.get(i).getCantidad());
 		}
 		model.addAttribute("total", sum);
-
+		*/
 		List<Producto> lista = pService.allProductos();
 		model.addAttribute("productos", lista);
 
